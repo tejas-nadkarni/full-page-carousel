@@ -18,9 +18,22 @@ export default class Main {
       margin: 50,
       loop: true,
       items: 1,
-      stagePadding: 350,
       touchDrag: false,
-      mouseDrag: false
+      mouseDrag: false,
+      responsive:{
+          0:{
+              stagePadding: 50,
+          },
+          600:{
+              stagePadding: 150,
+          },
+          1000:{
+              stagePadding: 250,
+          },
+          1200:{
+              stagePadding: 350,
+          }
+      }
     });
     $('.full-carousel__body').hide();
     $('.full-carousel__body-tab0').show();
